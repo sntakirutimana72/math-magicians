@@ -1,6 +1,6 @@
-# React App Template
+# Math Magicians
 
-A React app template that consists of linter configurations and other additional boilerplate code. Built with HTML, CSS, JavaScript, Webpack &amp; React.
+The _**math-magicians**_ app allows user to perform simple mathematical computations like addition, division, and also to view some of the most legendary philosophers' quotes.
 
 
 ## Built With
@@ -8,13 +8,7 @@ A React app template that consists of linter configurations and other additional
 - html
 - css
 - JavaScript
-- Webpack
 - React
-
-
-## Live Demo
-
-_live demo links go here_
 
 
 ## Getting Started
@@ -48,11 +42,6 @@ Open _Terminal/Shell_ inside your _VSCode_ and run
 - For _eslint_ tests, run
   ```
     npm run lint:es
-  ```
-- For running a _**webpack local server**_, run
-  ```
-    npm start
-  ```
 
 
 ## Authors
@@ -77,4 +66,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/sntakirutimana72/microverse-react-template/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/sntakirutimana72/math-magicians/blob/main/LICENSE) licensed.
