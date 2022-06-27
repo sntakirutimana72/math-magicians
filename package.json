@@ -12,8 +12,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "lint:style": "npx stylelint '**/*.{css,scss}'",
+    "lint:style": "npx stylelint **/*.{css,scss}",
     "lint:es": "npx eslint .",
+    "lint:style-f": "npx stylelint **/*.{css,scss} --fix",
+    "lint:es-f": "npx eslint . --fix",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
