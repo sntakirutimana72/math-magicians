@@ -8,7 +8,6 @@ The _**math-magicians**_ app allows user to perform simple mathematical computat
 - html
 - css
 - JavaScript
-- Webpack
 - React
 
 
@@ -43,11 +42,6 @@ Open _Terminal/Shell_ inside your _VSCode_ and run
 - For _eslint_ tests, run
   ```
     npm run lint:es
-  ```
-- For running a _**webpack local server**_, run
-  ```
-    npm start
-  ```
 
 
 ## Authors
@@ -72,4 +66,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/sntakirutimana72/microverse-react-template/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/sntakirutimana72/math-magicians/blob/main/LICENSE) licensed.
