@@ -1,6 +1,6 @@
-# React App Template
+# Math Magicians
 
-A React app template that consists of linter configurations and other additional boilerplate code. Built with HTML, CSS, JavaScript, Webpack &amp; React.
+The _**math-magicians**_ app allows user to perform simple mathematical computations like addition, division, and also to view some of the most legendary philosophers' quotes.
 
 
 ## Built With
@@ -10,11 +10,6 @@ A React app template that consists of linter configurations and other additional
 - JavaScript
 - Webpack
 - React
-
-
-## Live Demo
-
-_live demo links go here_
 
 
 ## Getting Started
