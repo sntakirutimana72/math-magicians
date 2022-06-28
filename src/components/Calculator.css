@@ -1,0 +1,61 @@
+.calc,
+.calc-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.calc-wrapper {
+  justify-content: center;
+  height: 100vh;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.calc {
+  padding: 2px;
+  border-radius: 5px;
+  background: #202060;
+}
+
+.calc-logger {
+  padding: 20px 10px;
+}
+
+.calc-logger div {
+  width: 100%;
+  text-align: right;
+  font-size: 28px;
+}
+
+.calc-pad {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1px;
+}
+
+.calc-btn {
+  cursor: pointer;
+  border: none;
+  height: 45px;
+  font-size: 15px;
+  background: #101030;
+}
+
+.zero-btn {
+  grid-column: span 2 / 3;
+}
+
+.func-btn {
+  background: orange;
+}
+
+.calc-btn:hover,
+.calc-btn:focus {
+  outline: none;
+  background: #101050cc;
+}
+
+.func-btn:hover,
+.func-btn:focus {
+  background: orangered;
+}
