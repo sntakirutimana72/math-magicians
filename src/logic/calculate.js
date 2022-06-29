@@ -17,7 +17,7 @@ export default function calculate(obj, buttonName) {
   if (buttonName === 'AC') {
     return {
       total: null,
-      next: null,
+      next: 0,
       operation: null,
     };
   }
@@ -60,7 +60,7 @@ export default function calculate(obj, buttonName) {
       if (obj.total.includes('.')) {
         return {};
       }
-      return { ...obj, next: `${obj.total}.` };
+      return { next: `${obj.total}.`, total: null };
     }
     return { ...obj, next: '0.' };
   }
