@@ -32,6 +32,8 @@
     "react/react-in-jsx-scope": "off",
     "import/no-unresolved": "off",
     "no-shadow": "off",
+    "consistent-return": "off",
+    "no-param-reassign": "off",
     "react/jsx-curly-brace-presence": "off"
   },
   "ignorePatterns": [
