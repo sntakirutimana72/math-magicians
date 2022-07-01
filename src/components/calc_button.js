@@ -16,7 +16,7 @@ class CalcButton extends Component {
   render() {
     const { padkey, classes } = this.props;
     return (
-      <button type="button" className={`calc-btn${classes}`} onClick={this.changeExpression}>
+      <button type="button" className={`calc-btn ${classes}`} onClick={this.changeExpression}>
         {padkey}
       </button>
     );
