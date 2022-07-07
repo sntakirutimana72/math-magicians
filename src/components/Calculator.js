@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import CalcLogger from './calc_logger';
-import CalcButton from './calc_button';
+import CalcLogger from './CalcLogger';
+import CalcButton from './CalcButton';
 import calculate from '../logic/calculate';
+
 import './Calculator.css';
 
 const btnConfigs = [
@@ -73,7 +74,7 @@ const btnConfigs = [
 const Calculator = () => {
   const [state, setState] = useState({});
 
-  const onExpessionChange = (buttonText) => {
+  const handleKeypress = (buttonText) => {
     const newState = calculate(state, buttonText);
     setState(() => newState);
   };
@@ -90,17 +91,17 @@ const Calculator = () => {
         />
         <div>
           <div className="calc-pad">
-            {btnConfigs.map((btn) => (
-              btn.classes ? (
-                <CalcButton
-                  key={btn.name}
-                  padkey={btn.name}
-                  classes={btn.classes}
-                  changeExpression={onExpessionChange}
-                />
-              ) : (
-                <CalcButton key={btn.name} padkey={btn.name} changeExpression={onExpessionChange} />
-              )
+            {btnConfigs.map(({ name, classes = null }) => (
+              !classes
+                ? <CalcButton key={name} name={name} handlePress={handleKeypress} />
+                : (
+                  <CalcButton
+                    key={name}
+                    name={name}
+                    classes={classes}
+                    handlePress={handleKeypress}
+                  />
+                )
             ))}
           </div>
         </div>
