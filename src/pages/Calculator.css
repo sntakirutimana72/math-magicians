@@ -1,0 +1,4 @@
+.CalculatorBlock {
+  display: flex;
+  gap: 20px;
+}

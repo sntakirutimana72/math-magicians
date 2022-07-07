@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import CalcLogger from './calc_logger';
-import CalcButton from './calc_button';
+import CalcLogger from './CalcLogger';
+import CalcButton from './CalcButton';
 import calculate from '../logic/calculate';
+
 import './Calculator.css';
 
 const btnConfigs = [
@@ -91,16 +92,9 @@ const Calculator = () => {
         <div>
           <div className="calc-pad">
             {btnConfigs.map((btn) => (
-              btn.classes ? (
-                <CalcButton
-                  key={btn.name}
-                  padkey={btn.name}
-                  classes={btn.classes}
-                  changeExpression={onExpessionChange}
-                />
-              ) : (
-                <CalcButton key={btn.name} padkey={btn.name} changeExpression={onExpessionChange} />
-              )
+              !btn.classes
+              ? <CalcButton key={btn.name} changeExpression={onExpessionChange} />
+              : <CalcButton key={btn.name} classes={btn.classes} changeExpression={onExpessionChange} />
             ))}
           </div>
         </div>

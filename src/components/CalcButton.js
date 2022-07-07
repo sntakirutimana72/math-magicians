@@ -14,17 +14,18 @@ class CalcButton extends Component {
   }
 
   render() {
-    const { padkey, classes } = this.props;
+    const { key, classes } = this.props;
+
     return (
       <button type="button" className={`calc-btn ${classes}`} onClick={this.changeExpression}>
-        {padkey}
+        {key}
       </button>
     );
   }
 }
 
 CalcButton.propTypes = {
-  padkey: PropTypes.string.isRequired,
+  key: PropTypes.string.isRequired,
   classes: PropTypes.string,
   changeExpression: PropTypes.func.isRequired,
 };
