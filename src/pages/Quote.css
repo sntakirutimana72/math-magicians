@@ -1,0 +1,13 @@
+.sectionBlock {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 10px;
+}
+
+.quoteBlock {
+  padding: 10px;
+  border-radius: 10px;
+  background: #101020;
+  box-shadow: 0 0 4px black;
+}
