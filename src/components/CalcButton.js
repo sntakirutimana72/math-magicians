@@ -1,33 +1,33 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import $text from '../helpers/dom_selectors';
+import { $text } from '../helpers/dom_selectors';
 
 class CalcButton extends Component {
   constructor(props) {
     super(props);
-    this.changeExpression = this.changeExpression.bind(this);
+    this.handleKeypress = this.handleKeypress.bind(this);
   }
 
-  changeExpression({ target }) {
-    const { changeExpression } = this.props;
-    changeExpression($text(target));
+  handleKeypress({ target }) {
+    const { handlePress } = this.props;
+    handlePress($text(target));
   }
 
   render() {
-    const { key, classes } = this.props;
+    const { name, classes } = this.props;
 
     return (
-      <button type="button" className={`calc-btn ${classes}`} onClick={this.changeExpression}>
-        {key}
+      <button type="button" className={`calc-btn ${classes}`} onClick={this.handleKeypress}>
+        {name}
       </button>
     );
   }
 }
 
 CalcButton.propTypes = {
-  key: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   classes: PropTypes.string,
-  changeExpression: PropTypes.func.isRequired,
+  handlePress: PropTypes.func.isRequired,
 };
 
 CalcButton.defaultProps = { classes: '' };

@@ -1,0 +1,22 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin-bottom: 50px;
+  background: blue;
+}
+
+.Title {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.NavUl {
+  display: flex;
+  gap: 10px;
+}
+
+.NavLink {
+  padding: 5px 10px;
+}

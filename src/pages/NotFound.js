@@ -1,8 +1,8 @@
-import { NotFoundBlock, HeadingBlock } from './NotFound.css';
+import styles from './NotFound.module.css';
 
 const NotFound = () => (
-  <section style={NotFoundBlock}>
-    <p style={HeadingBlock}>Page Not Found</p>
+  <section className={styles.NotFound}>
+    <p className={styles.Heading}>Page Not Found</p>
   </section>
 );
 

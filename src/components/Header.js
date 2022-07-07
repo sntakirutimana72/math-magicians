@@ -1,14 +1,17 @@
 import { Link } from 'react-router-dom';
+import styles from './Header.module.css';
 
-const Navbar = () => (
-  <Header>
-    <Link path="/">Math Magicians</Link>
-    <ul>
-      <li><Link path="/">Home</Link></li>
-      <li><Link path="/calculator">Calculator</Link></li>
-      <li><Link path="/quote">Quote</Link></li>
-    </ul>
-  </Header>
+const Header = () => (
+  <header className={styles.Header}>
+    <Link to="/" className={styles.Title}>Math Magicians</Link>
+    <nav>
+      <ul className={styles.NavUl}>
+        <li><Link to="/" className={styles.NavLink}>Home</Link></li>
+        <li><Link to="/calculator" className={styles.NavLink}>Calculator</Link></li>
+        <li><Link to="/quote" className={styles.NavLink}>Quote</Link></li>
+      </ul>
+    </nav>
+  </header>
 );
 
-export default Navbar;
+export default Header;

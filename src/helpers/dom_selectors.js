@@ -4,10 +4,15 @@
  * @param { string | undefined } value
  * @returns
  */
-const $text = (element, value) => {
+export const $text = (element, value) => {
   if (value === undefined) return element.textContent;
 
   element.textContent = value;
 };
 
-export default $text;
+/**
+ *
+ * @param { string } id
+ * @returns { HTMLElement | null }
+ */
+export const $withId = (id) => document.getElementById(id);

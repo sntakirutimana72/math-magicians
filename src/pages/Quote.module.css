@@ -1,0 +1,20 @@
+.Quote {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.QuoteItem {
+  padding: 20px;
+  border-radius: 10px;
+  background: #101035;
+  box-shadow: 0 0 8px black;
+  line-height: 32px;
+}
+
+.QuoteBy {
+  padding-left: 5px;
+  color: violet;
+}

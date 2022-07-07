@@ -10,3 +10,11 @@ body {
   margin: 0;
   background: #101020;
 }
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}

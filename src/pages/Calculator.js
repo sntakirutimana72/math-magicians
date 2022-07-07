@@ -1,8 +1,8 @@
-import Component from "../components/Calculator";
-import { CalculatorBlock } from './Calculator.css';
+import Component from '../components/Calculator';
+import styles from './Calculator.module.css';
 
 const Calculator = () => (
-  <section style={CalculatorBlock}>
+  <section className={styles.Calculator}>
     <h1>Lets do some math!</h1>
     <Component />
   </section>

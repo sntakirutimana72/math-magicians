@@ -74,7 +74,7 @@ const btnConfigs = [
 const Calculator = () => {
   const [state, setState] = useState({});
 
-  const onExpessionChange = (buttonText) => {
+  const handleKeypress = (buttonText) => {
     const newState = calculate(state, buttonText);
     setState(() => newState);
   };
@@ -91,10 +91,17 @@ const Calculator = () => {
         />
         <div>
           <div className="calc-pad">
-            {btnConfigs.map((btn) => (
-              !btn.classes
-              ? <CalcButton key={btn.name} changeExpression={onExpessionChange} />
-              : <CalcButton key={btn.name} classes={btn.classes} changeExpression={onExpessionChange} />
+            {btnConfigs.map(({ name, classes = null }) => (
+              !classes
+                ? <CalcButton key={name} name={name} handlePress={handleKeypress} />
+                : (
+                  <CalcButton
+                    key={name}
+                    name={name}
+                    classes={classes}
+                    handlePress={handleKeypress}
+                  />
+                )
             ))}
           </div>
         </div>
