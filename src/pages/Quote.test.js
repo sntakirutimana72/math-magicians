@@ -3,7 +3,7 @@ import { act } from 'react-dom/test-utils';
 import Quote from './Quote';
 
 jest.mock('../helpers/quotes', () => [
-  { title: 'some quote', by: "author" },
+  { title: 'some quote', by: 'author' },
 ]);
 
 it('renders Quote-Page', () => {

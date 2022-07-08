@@ -6,7 +6,7 @@ beforeEach(() => {
   render(
     <BrowserRouter>
       <Header />
-    </BrowserRouter>
+    </BrowserRouter>,
   );
 });
 
