@@ -91,7 +91,7 @@ const Calculator = () => {
         />
         <div>
           <div className="calc-pad">
-            {btnConfigs.map(({ name, classes = "" }) => (
+            {btnConfigs.map(({ name, classes = '' }) => (
               <CalcButton key={name} handlePress={handleKeypress} classes={classes} name={name} />
             ))}
           </div>

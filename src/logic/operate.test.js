@@ -24,8 +24,8 @@ describe('Test operations', () => {
     expect(operate('2', '0', '%')).toBe("Can't find modulo as can't divide by 0.");
   });
   it('Unknown Operator', () => {
-    expect(() => { operate('5', '2', '*') }).toThrow();
-    expect(() => { operate('4', '2', '/') }).toThrow();
-    expect(() => { operate('2', '0', '?') }).toThrow();
+    expect(() => { operate('5', '2', '*'); }).toThrow();
+    expect(() => { operate('4', '2', '/'); }).toThrow();
+    expect(() => { operate('2', '0', '?'); }).toThrow();
   });
 });
