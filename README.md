@@ -44,6 +44,13 @@ Open _Terminal/Shell_ inside your _VSCode_ and run
     npm run lint:es
 
 
+### Deployment
+
+- <a href="https://math-magicians-72.herokuapp.com/" target=_blank title="Heroku">Heroku</a>
+
+- <a href="https://math-magicians-72.netlify.app/" target=_blank title="Netlify">Netlify</a>
+
+
 ## Authors
 
 👤 **Steve**
