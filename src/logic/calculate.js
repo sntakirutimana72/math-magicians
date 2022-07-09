@@ -121,7 +121,7 @@ export default function calculate(obj, buttonName) {
 
   // The user hasn't typed a number yet, just save the operation
   if (!obj.next) {
-    return { operation: buttonName };
+    return {};
   }
 
   // save the operation and shift 'next' into 'total'

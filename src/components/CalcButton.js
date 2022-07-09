@@ -5,10 +5,10 @@ import { $text } from '../helpers/dom_selectors';
 class CalcButton extends Component {
   constructor(props) {
     super(props);
-    this.handleKeypress = this.handleKeypress.bind(this);
+    this.onKeydown = this.onKeydown.bind(this);
   }
 
-  handleKeypress({ target }) {
+  onKeydown({ target }) {
     const { handlePress } = this.props;
     handlePress($text(target));
   }
@@ -17,7 +17,7 @@ class CalcButton extends Component {
     const { name, classes } = this.props;
 
     return (
-      <button type="button" className={`calc-btn ${classes}`} onClick={this.handleKeypress}>
+      <button type="button" className={`calc-btn ${classes}`} onClick={this.onKeydown}>
         {name}
       </button>
     );

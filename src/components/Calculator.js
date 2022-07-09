@@ -5,7 +5,7 @@ import calculate from '../logic/calculate';
 
 import './Calculator.css';
 
-const btnConfigs = [
+const BUTTONS = [
   {
     name: 'AC',
   },
@@ -84,14 +84,10 @@ const Calculator = () => {
   return (
     <div className="calc-wrapper">
       <div className="calc">
-        <CalcLogger
-          next={next}
-          operation={operation}
-          total={total}
-        />
+        <CalcLogger next={next} operation={operation} total={total} />
         <div>
           <div data-testid="calc-keys" className="calc-pad">
-            {btnConfigs.map(({ name, classes = '' }) => (
+            {BUTTONS.map(({ name, classes = '' }) => (
               <CalcButton key={name} handlePress={handleKeypress} classes={classes} name={name} />
             ))}
           </div>
