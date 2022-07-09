@@ -44,7 +44,7 @@ Open _Terminal/Shell_ inside your _VSCode_ and run
     npm run lint:es
 
 
-### Deployment
+## Deployment
 
 - <a href="https://math-magicians-72.herokuapp.com/" target=_blank title="Heroku">Heroku</a>
 
